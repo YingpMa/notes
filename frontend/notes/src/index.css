@@ -1,0 +1,44 @@
+/* index.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* 1) 给 html, body, #root 全部去掉默认 margin、padding，并撑满窗口 */
+  html,
+  body,
+  #root {
+    @apply w-full h-full m-0 p-0;
+  }
+
+  /* 2) 默认字体 */
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* 3) 浅色模式下 body 背景为白色，暗色模式下为 rgb(27,27,27) */
+  body {
+    @apply bg-white dark:bg-[rgb(27,27,27)] overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .input-box {
+    @apply w-full text-sm bg-transparent border-[1.5px] px-5 py-3 rounded mb-4 outline-none;
+  }
+
+  .btn-primary {
+    @apply w-full text-sm bg-black text-white p-2 rounded my-1 border;
+  }
+
+  .icon-btn {
+    @apply text-xl text-slate-300 cursor-pointer;
+  }
+
+  .input-label {
+    @apply text-xs text-slate-400;
+  }
+}
