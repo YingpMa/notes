@@ -18,7 +18,6 @@ A full-stack, feature-rich notes application built with **React**, **Node.js**, 
 - **React Router**: Seamless client-side navigation.
 - **Tailwind CSS**: Flexible, customizable styling.
 - **React Icons**: Consistent UI icons.
-- **Framer Motion**: Smooth animations.
 
 ### Backend
 - **Node.js & Express**: Scalable backend API development.
