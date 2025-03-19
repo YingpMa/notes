@@ -1,32 +1,29 @@
 # Notes App 📝
 
-A full-stack, feature-rich notes application built with **React**, **Node.js**, **Express**, and **MongoDB**. This app provides seamless note-taking, organization, and authentication with JWT, along with a clean UI powered by **Tailwind CSS**.
+A full-stack, feature-rich notes application built with **React**, **Node.js**, **Express**, and **MongoDB**. This app allows seamless note-taking, management, and user authentication via JWT, with a clean UI powered by **Tailwind CSS**.
 
 👉 **[Live Demo](https://notes-yingping.vercel.app/login)**
 
 ## Key Features ✨
-- **Rich Text Note Taking**: Create, edit, delete, search, and pin notes effortlessly.
-- **User Authentication**: Secure login and signup powered by **JWT authentication**.
-- **Organized Note Management**: Filter and sort notes by pinned, archived, or keyword search.
+- **Rich Text Note Taking**: Effortlessly create, edit, delete, and search notes.
+- **User Authentication**: Secure user login and signup with **JWT authentication**.
+- **Organized Note Management**: Filter and sort notes by pinned, archived, or search keywords.
 - **Dark Mode**: Toggle between light and dark themes for a personalized experience.
-- **Optimized Performance**: Uses memoization and virtualized lists for smooth UI interactions.
-- **Secure API**: Backend protected with **JWT refresh token rotation** and **HTTP-only cookies**.
-- **Cloud Functions Integration**: Background tasks like activity logging powered by **Firebase Cloud Functions**.
+- **Optimized Performance**: Smooth UI interactions using memoization and virtualized lists.
+- **Secure API**: Backend protected by **JWT refresh token rotation** and **HTTP-only cookies**.
 
 ## Tech Stack 🛠
 ### Frontend
-- **React**: Interactive and responsive UI.
-- **React Router**: Smooth client-side navigation.
-- **Tailwind CSS**: Modern and flexible styling.
-- **React Hook Form & Zod**: Robust form validation.
-- **React Query**: Efficient server state management.
-- **React Icons**: Beautiful and consistent UI icons.
-- **Framer Motion**: Smooth UI animations.
+- **React**: Interactive and responsive user interface.
+- **React Router**: Seamless client-side navigation.
+- **Tailwind CSS**: Flexible, customizable styling.
+- **React Icons**: Consistent UI icons.
+- **Framer Motion**: Smooth animations.
 
 ### Backend
-- **Node.js & Express**: Scalable and fast API development.
-- **MongoDB & Mongoose**: Schema-based NoSQL database.
-- **JWT Authentication**: Secure authentication with refresh tokens.
-- **Firebase Cloud Functions**: Background tasks like logging and notifications.
+- **Node.js & Express**: Scalable backend API development.
+- **MongoDB & Mongoose**: NoSQL database management with Mongoose schema.
+- **JWT Authentication**: Secure user authentication using JWT.
 - **Bcrypt.js**: Secure password hashing.
-- **Cors & Helmet**: Security enhancements for API protection.
+- **Cors & Helmet**: Enhance API security.
+
