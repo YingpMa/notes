@@ -24,13 +24,15 @@ const NoteCard = ({
           </span>
         </div>
         <MdOutlinePushPin
-          className={`icon-btn ${isPinned ? "text-primary" : "text-[#999]"}`}
+          className={`icon-btn ${
+            isPinned ? " text-yellow-500 dark:text-primary" : "text-[#999]"
+          }`}
           onClick={onPinNote}
         />
       </div>
 
       <p className="text-xs text-slate-600 dark:text-slate-300 mt-2">
-        {content?.slice(0, 60)}
+        {content?.slice(0, 200)}
       </p>
 
       <div className="flex items-center justify-between mt-2">
