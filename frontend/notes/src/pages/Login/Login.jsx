@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import PasswordInput from "../../components/Input/PasswordInput";
 import { validateEmail } from "../../utils/helper";
 import axiosInstance from "../../utils/axiosInstance";
+import { BASE_URL } from "../../utils/constants";
 
 const Login = ({ theme, toggleTheme }) => {
   const [email, setEmail] = useState("");
@@ -28,6 +29,7 @@ const Login = ({ theme, toggleTheme }) => {
     setError("");
 
     try {
+      console.log("BASE_URL:", BASE_URL);
       const response = await axiosInstance.post("/login", { email, password });
       if (response.data && response.data.accessToken) {
         localStorage.setItem("token", response.data.accessToken);
